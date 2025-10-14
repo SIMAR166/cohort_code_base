@@ -1,0 +1,201 @@
+/* Reset and Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: apple;
+  src: url(./sf-pro-display_regular.woff2);
+}
+
+@font-face {
+  font-family: textapple;
+  src: url(./sf-pro-text_regular.woff2);
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: apple;
+  font-size: 14px;
+  z-index: 100;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar > a:hover {
+  color: rgb(1, 119, 237);
+}
+
+.navbar > i {
+  font-size: 18px;
+}
+
+
+.btn {
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-family: apple;
+  font-size: 18px;
+  font-weight: 100;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.learn {
+  background: rgb(1, 119, 237);
+  color: white;
+}
+
+.buy {
+  background: transparent;
+  border: 2px solid #2A97FF;
+  color: #2A97FF;
+}
+
+.buy:hover {
+  background: rgb(1, 119, 237);
+  color: white;
+}
+
+
+.iphone_pro {
+  min-height: 100vh;
+  text-align: center;
+  background: url(./apple\ img.jpg) center/cover no-repeat;
+  padding-top: 120px;
+}
+
+.iphone_pro h1 {
+  color: white;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+}
+
+.iphone_pro h2 {
+  color: white;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+
+.iphone_air {
+  min-height: 100vh;
+  text-align: center;
+  background: url("https://www.apple.com/v/home/ch/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_medium_2x.jpg")
+    center/cover no-repeat;
+  font-family: apple;
+  padding-top: 100px;
+}
+
+.iphone_air h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.iphone_air h2 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 300;
+}
+
+.parent,
+.parent2,
+.parent3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.parent > div,
+.parent2 > div,
+.parent3 > div {
+  flex: 1 1 100%;
+  text-align: center;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .parent > div,
+  .parent2 > div,
+  .parent3 > div {
+    flex: 1 1 48%;
+  }
+}
+
+
+.iphone {
+  background-image: url("./promo_iphone_17__bhofuohbsu3m_small_2x.jpg");
+}
+
+.airpods {
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_medium_2x.jpg");
+}
+
+.watch11_series {
+  background-image: url("https://www.apple.com/in/home/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_medium_2x.jpg");
+}
+
+.watch_se3 {
+  background-image: url("https://www.apple.com/in/home/images/promos/apple-watch-se-3/promo_apple_watch_se_3__fz5y29qx5mmy_small_2x.jpg");
+}
+
+.watch_ultra {
+  background-image: url("https://www.apple.com/in/home/images/promos/apple-watch-ultra-3/promo_apple_watch_ultra3__bwvslhbxx99e_medium_2x.jpg");
+}
+
+.trade_in {
+  background-image: url("https://www.apple.com/v/home/ch/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_medium_2x.jpg");
+}
+
+
+h1 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-family: apple;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-family: textapple;
+  font-weight: normal;
+}
+
+
+.watch_ultra h2 {
+  color: white;
+}
+
+.trade_in h2 {
+  color: black;
+}
+
+
+body {
+  padding-top: 40px;
+}

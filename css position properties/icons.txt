@@ -1,0 +1,25 @@
+ this one is for the arrow after the services 
+<i class="ri-arrow-down-s-fill"></i>
+
+google play png for the playstore image 
+
+this one is for adding the stars 
+ <i class="ri-star-fill"></i>
+
+this one is for adding the arrow at the end 
+    <i class="ri-arrow-right-up-line"></i>
+
+this one is for the bubble 
+<i class="ri-bubble-chart-fill"></i>
+
+image 1
+https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+image 2 
+https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+image 3 
+https://images.unsplash.com/photo-1726722886957-2ed42b15aaa3?q=80&w=896&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+image 4 
+https://images.unsplash.com/photo-1628157588553-5eeea00af15c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D

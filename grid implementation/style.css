@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+html,body{
+    width: 100%;
+    height:100%;
+    background-color: white;
+}
+.hero {
+     height:100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:minmax(200px,400px) 1fr;
+   grid-template-rows: 80px 250px 1fr;
+   grid-template-areas: "header header"
+                         "aside section"
+                         "figure figure";
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: header;
+    background-color: white;
+}
+.links{
+    display: flex;
+    gap:35px;
+}
+.image{
+    display: flex;
+    padding-left: 60px;
+}
+
+.image h3{
+font-size: 18px;
+font-weight: 800;
+background-color: white;
+display: inline-block;
+}
+
+header  a{
+text-decoration: none;
+color: black;
+font-size: 16px;
+}
+.buttons{
+    display: flex;
+    color: white;
+    padding-right: 80px;
+    font-size: 16px;
+}
+#btn1{
+    background-color: transparent;
+    padding: 15px 22px 15px 22px;
+    border-radius: 30px;
+    color: rgb(1, 96, 253);
+    border: 2px solid rgb(1, 96, 253);
+    margin-right: 8px;
+}
+#btn2{
+    background-color: rgb(1, 96, 253);
+    padding: 15px 22px 15px 22px;
+    border-radius: 30px;
+    color:white;
+    border: 2px solid rgb(1, 96, 253);
+}
+aside {
+  border-top-left-radius: 25px;
+    background-color:rgb(246, 247, 249);
+    grid-area: aside;
+    padding-left: 50px;
+}
+aside h4{
+    display: inline-block;
+    font-size: 47px;
+    font-weight: 500;
+    transform: translateY(100%);}
+section{
+    background-color:rgb(246, 247, 249);
+    grid-area: section;
+    padding:  60px 100px 30px 100px;
+    border-top-right-radius: 25px;
+}
+section p{
+     font-size: 16px;
+     color: rgb(105, 106, 106);   
+}
+section button{
+    font-size: 16px;
+    margin-top: 20px;
+}
+#btn3{
+    background-color:rgb(1, 96, 253);
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    color:white;
+    border: 2px solid rgb(1, 96, 253);
+    margin-right: 8px;
+    margin-left:40px;
+
+}
+#btn4{
+    background-color: transparent;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+     color: rgb(1, 96, 253);
+    border: 2px solid rgb(1, 96, 253);
+}
+figure{
+    grid-area:figure;
+    height: 50%;
+     background-color:rgb(246, 247, 249);
+ border-bottom-right-radius: 25px;
+ border-bottom-left-radius: 25px;
+}
+figure img{
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    position: relative;
+    left:12%;
+    margin-top:9px;
+    border-radius: 40px;
+    padding-bottom: 20px;
+
+}
+/* new  */
+.stat{
+    height: 30vh;
+    /* margin-top: 90px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 60px 0px 60px;
+}
+.stat_item h2{
+font-size: 50px;
+margin-bottom: 4px;
+}
+.stat_item p{
+    color: rgb(105, 106, 106);
+}
+
+/* about section */
+.about_section{
+    height: 75vh;
+    margin: 8px 20px 8px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 270px 1fr;
+    grid-template-areas: "button image"
+                         "textarea image";
+}
+.button
+{
+  background-color:rgb(246, 247, 249);
+    border-top-left-radius: 25px;
+    padding:40px 0px 0px 50px ;
+    grid-area: button;
+}
+.button button
+{
+      background-color:transparent;
+      padding: 15px 30px ;
+      border-radius: 30px;
+      font-size: 16px;
+}
+.image{
+    grid-area: image;
+     border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:rgb(246, 247, 249);
+}
+.image img{
+    height: 70%;
+    width: 80%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 70px 0px 0px 70px;
+}
+.textarea{
+    grid-area: textarea;
+     border-bottom-left-radius: 25px;
+  background-color:rgb(246, 247, 249);
+}
+
+.textarea p{
+    font-size: 18px;
+    color: rgb(105, 106, 106);
+    padding: 4px 12px 0px 30px;
+}
+.titles p{
+    font-size: 35px;
+    font-weight: 900;
+    color: black;
+    padding: 0px 12px 0px 30px;
+}
+
+/* expertise section */
+.expertise{
+    height:100vh;
+    display: grid;
+    margin:20px 60px 100px 60px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 90px 150px 0.5fr 0.5fr;
+    grid-template-areas: "expertise_btn  expertise_btn"
+                          "content1 content2"
+                          "group1 group1"
+                          "group2 group2";
+}
+.expertise_btn{
+    /* background-color: aqua; */
+    grid-area:expertise_btn ;
+}
+.expertise_btn button{
+    background-color: transparent;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 10px 0px 0px 20px;
+}
+.content1
+{
+    font-weight: 900;
+    font-size: 32px;
+    grid-area: content1;
+
+}
+.content1 p{
+    padding-left: 20px;
+}
+.content2
+{
+  color: rgb(105, 106, 106);
+    background-color: white;
+    grid-area: content2;
+    font-size: 16px;
+}
+.content2 #line1{
+    margin-top: 20px;
+}
+.group1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: group1;
+}
+.group2{
+    margin-top: 40px;
+    grid-area: group2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* images */
+.card{
+    width: 21vw;
+    height: 350px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.face {
+    position: relative;
+}
+.face, .face img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.face .title{
+    font-size: 12px;
+    color:white;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+     justify-content: center;
+    flex-direction: column;  
+    bottom: 0px;
+    color: white;
+    background: linear-gradient(transparent, black);
+}
+.title p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.506);
+}
+ .detail{
+    position: absolute;
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background-color: rgb(2, 96, 254);
+    color: white;
+    padding: 20px;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.txt h1{
+    margin: 12px 0px 13px 0px;
+    font-size: 20px;
+}
+.txt p{
+    margin-top:12px ;
+    font-size: 14px;
+}
+
+.icons i{
+    font-size: 22px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color:rgba(255, 255, 255,0.5);
+}
+.card:hover .detail {
+  bottom: 0; 
+}
+.milestones{
+height: 90vh;
+display: grid;
+margin: 250px 20px 0px 20px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 80px 140px 1fr;
+grid-template-areas: "button_milestone button_milestone "
+                     "main_head main_detail"
+                     "figure_milestone years";
+}
+.button_milestone{
+    grid-area: button_milestone;
+    background-color: rgb(246, 247, 249);
+  border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.button_milestone button{
+    margin: 25px 0px 5px 50px;
+    padding:15px 25px 15px 25px ;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.main_head{
+    grid-area: main_head;
+    background-color:rgb(246, 247, 249); 
+    font-size: 30px; 
+    font-weight: 900;
+}
+.main_head #journey{
+         margin: 30px 0px 0px 50px;
+}
+.main_head #achievements{
+     margin: 0px 0px 0px 50px;
+}
+.main_detail{
+    grid-area: main_detail;
+    background-color: rgb(246, 247, 249);
+        color: rgb(128, 128, 128);
+     font-size: 17px;
+
+}
+.main_detail #Discover{
+    margin: 35px 4px 0px 0px;
+}
+.figure_milestone{
+    background-color: rgb(246, 247, 249);
+    grid-area: figure_milestone;
+     border-bottom-left-radius: 25px;
+
+}
+.figure_milestone img{
+     margin: 30px 0px 0px 50px;
+     border-radius: 20px;
+}
+.years{
+    grid-area: years;
+  border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+     background-color: rgb(246, 247, 249);
+    gap:20px;
+    padding: 40px 0px 0px 0px;
+}
+.step1 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+}
+.step1 #year_no{
+    color: rgb(1, 96, 253);
+    font-size: 18px;
+}
+.step1 #tech{
+    font-size: 32px;
+}
+.step1 #year_no_next{
+     color: rgb(128, 128, 128);
+    font-size: 18px;
+}
+.step1 #tech_next{
+    font-size: 32px;
+      color: rgb(128, 128, 128);
+}
+.arrowicon{
+    font-size: 50px;
+    display: flex;
+    gap:20px;
+}
+/* footer */
+footer{
+    display: grid;
+    height: 60vh;
+    padding: 12px 60px 12px 60px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: rgb(35, 35, 35);
+    grid-template-columns:400px 1fr 400px;
+    grid-template-rows: 90px 1fr 60px;
+    grid-template-areas: "logo logo logo"
+                         "subscribe quicklinks developers"
+                         "language  copyright  connect";
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.logo img{
+height:40%;
+object-fit: cover;
+}
+.logo h2{
+    color: white;
+}
+.subscribe {
+    grid-area: subscribe ;
+}
+.subscribe p{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.subscribe #Email{
+    background-color: rgba(128, 128, 128,0.5);
+    color: rgb(119, 119, 119);
+    padding: 15px 40px ;
+    border-radius: 30px;
+    border: 1px solid  rgba(128, 128, 128,0.5);
+
+}
+.subscribe #sub{
+    background-color:rgb(1, 96, 253);
+    color: white;
+    padding: 15px 25px ;
+    border-radius: 30px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+.quicklinks{
+    grid-area: quicklinks;
+    margin:0px 0px 0px 30px;
+}
+.quicklinks h5 , .Connect_with_us h5 ,.developers h5{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.quicklinks  li , .Connect_with_us li,.developers li {
+    color: white;
+    padding-bottom: 15px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.developers{
+    grid-area: developers;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.language {
+    grid-area: language ;
+    display: flex;
+    font-size: 16px;
+    color: white;
+
+
+}
+ .copyright{
+    grid-area:  copyright;
+    display: flex;
+    color: white;
+    font-size: 16px;
+     justify-content: center;
+ }
+.connect{
+    grid-area: connect;
+    display: flex;
+    justify-content: space-evenly;
+}
+.connect i {
+    font-size: 20px;
+    height:32px;
+    color: white;
+    padding: 2px 4px 2px 4px;
+    border-radius: 15px;
+}

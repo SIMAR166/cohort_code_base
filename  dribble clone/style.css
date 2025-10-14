@@ -1,0 +1,251 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+@font-face {
+    font-family:dribbble ;
+    src: url(./Mona-Sans.woff2);
+}
+html,body{
+    height: 100%;
+    width:100%;
+    font-family: dribbble;
+}
+.parent{
+   display: flex;
+justify-content: space-between;
+height:55%;
+
+}
+.main{
+    height:10%;
+    margin:5px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainsecond{
+    display: flex;
+    align-items: flex-start;
+    gap:50px;
+    height:90px;
+}
+   a {
+    margin-top: 33px;
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+    font-weight: 700;
+
+}
+img{
+margin-top:20px;
+  height:50px;
+}
+.navbar{
+    display: flex;
+    width:200px;
+    height:80px;
+}
+.signup button{
+     margin-top: 23px;
+     margin-left:10px;
+    background-color: rgb(36, 34, 34);
+    padding: 14px 24px ;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 90px;
+    color: aliceblue;
+}
+
+.container{
+    margin:0px 40px;
+    height:440px;
+   display: flex;
+   width:900px;
+   flex-direction: column;
+}
+.video{
+    overflow: hidden;
+    height:90%;
+    width:70%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-right:50px;
+}
+.textarea h1{
+font-size:50px;
+font-weight: 600;
+}
+.textarea p {
+  height:28px;
+  width:500px;
+  line-height: 1.5;
+}
+#first p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.buttons{
+    margin-top:30px;
+    display: flex;
+    margin-bottom:10px;
+}
+.buttons  button{
+    padding:8px 12px;
+    background-color:transparent;
+    margin-right: 4px;
+    border-radius: 50px;
+   font-size: 18px;
+   border:transparent;
+   font-weight: 500;
+}
+.buttons :hover button {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.search i {
+    /* padding:0px; */
+   margin-left: 25%;
+   font-size: 26px;
+   /* background-color:pink; */
+   border-radius: 20px;
+}
+.search button {
+    background-color:rgb(243, 243, 246);
+    padding:10px 18px;
+    border-radius:30px;
+    width:500px;
+     border:2px solid rgb(243, 243, 246);
+    font-size: 16px;
+    text-align: left;
+}
+.popular button{
+    border-radius: 20px;
+    margin-top: 12px;
+    padding: 10px 2px;
+    width:100px;
+    text-align: center;
+    font-size: 14px;
+    border:2px solid rgb(243, 243, 246);
+    background-color:transparent;
+}
+
+.section2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+     margin:5px 40px;
+     /* background-color:chartreuse; */
+  
+}
+.section2 button{
+    padding:8px 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    text-align: center;  
+    margin-top: 20px;
+    border: 2px solid  rgb(243, 243, 246);
+}
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    gap:70px;
+}
+.options >  a {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.design img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position:center;
+  
+}
+.first{
+    margin-top: 20px;
+    height:350px;
+    width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.profile img {
+    padding-top: 8px;
+    height:30px;
+    width:32px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.details{
+    width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .sidecontent{
+    width: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    transform: translateY(7%);
+}
+.about h5{
+    color: white;
+    background-color: grey;
+    padding:2px 3px;
+    border-radius: 5px;
+}
+.about h5:hover{
+    background-color: black;
+}
+.likes{
+    display: flex;
+}
+.likes i {
+    font-size: 24px;
+    /* padding: 2px; */
+    color:grey;
+}
+ .likes i:hover{
+color: rgb(205, 19, 81);
+}
+.eye{
+    color: grey;
+    font-size: 24px;
+}
+.sidecontent h4{
+    display: inline-block;
+    color: grey;
+    font-size:16px;
+}
+.about{
+    margin:0;
+  transform: translateY(-150%);
+    height:20px;
+}
+.section3 , .section4{
+    margin-right:12px;
+    display: flex;
+    align-items:  center;
+    justify-content: space-around;
+    margin:5px 40px;
+}
+.section4{
+  padding-bottom: 12px;
+}
+
+ .select i {
+    font-size: 24px;
+    color:black;
+    font-weight: 900;
+    background-color: white;
+    padding:10px 10px ;
+    border-radius: 25px ;
+}
+ 
+

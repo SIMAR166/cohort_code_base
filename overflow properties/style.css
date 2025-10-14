@@ -1,0 +1,115 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height:100%;
+background-color: dimgrey;
+}
+@font-face {
+    font-family:tattoos;
+    src: url(./Paper\ Inko.otf);  
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 14px;              /* width of the scrollbar */
+  height: 10px;             /* height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f;      /* color of the track (scrollbar background) */
+  /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:rosybrown; /* color of the scroll thumb (the draggable part) */
+  border-radius: 10px;
+  border: 2px solid #1f1f1f; /* gives a gap effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:blue; /* color when hovered */
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:9px;
+    flex-wrap:nowrap;}
+
+h1{
+    margin:40px 30px 30px 30px;
+    padding:12px;
+    color:transparent;
+    font-family: tattoos;
+    font-size:80px;
+    text-align: center;
+    background-clip: text;
+    background-image: url("https://i.pinimg.com/1200x/91/ea/dd/91eadd139b038d712bb0986d1f5efce3.jpg");
+    -webkit-text-stroke: 1px black;
+}
+h2{
+     font-family: tattoos;
+    font-size:80px;
+    text-align: center;
+    margin-top: 25px;
+    object-fit: cover;
+    color:transparent;
+  background-image: url("https://i.pinimg.com/1200x/91/ea/dd/91eadd139b038d712bb0986d1f5efce3.jpg");
+  background-clip: text;
+-webkit-text-stroke: 1px black;
+}
+.container{
+    height:48%;
+    width:22%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+
+}
+.container img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 15px;
+    border: 2px solid black;
+
+}
+.bottom{
+    height:25%;
+    width:100%;
+background: linear-gradient(transparent,black);
+    position: absolute;
+    bottom: -25%;
+    padding:4px 18px 4px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease 1.5s;
+}
+.bottom h5  {
+    font-size:24px;
+    color: aliceblue;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+}
+.bottom i  {
+    font-size: 26px;
+    color: rgb(223, 9, 123);
+    background-color:white;
+    padding: 2px;
+    border-radius: 15px;
+    display: inline-block;
+}
+.container:hover .bottom  {
+    bottom: 0%;
+}
