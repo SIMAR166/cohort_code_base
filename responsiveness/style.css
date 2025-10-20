@@ -14,6 +14,7 @@ body {
 
 main {
   width: 100%;
+  padding: 1rem;
 }
 
 section {
@@ -384,13 +385,14 @@ section.view7 .top img {
   border-radius: 1rem;
 }
 section.view7 .bottom {
+  width: 100%;
   background-color: rgb(32, 29, 29);
   color: white;
   padding: 2rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0rem;
+  gap: 10rem;
   justify-content: space-between;
   margin-top: 1rem;
   text-transform: uppercase;
@@ -416,6 +418,37 @@ section.view7 .bottom .button i {
 }
 section.view7 .bottom .button p {
   font-size: 0.8rem;
+}
+
+section.view8 {
+  padding: 1.6rem;
+  color: black;
+  background-color: rgb(206, 189, 99);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+section.view8 .top p {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  line-height: 2;
+}
+section.view8 .top h1 {
+  font-size: clamp(2rem, 2.8vw, 2.8rem);
+  font-weight: 400;
+}
+section.view8 .bottom {
+  padding: 1rem 2rem 0rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.view8 .bottom button {
+  background-color: black;
+  color: white;
+  padding: 0.8rem 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
 }
 
 /*  Desktop */
@@ -480,7 +513,7 @@ section.view7 .bottom .button p {
   }
   section.view3 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     gap: 1.4rem;
     align-items: stretch;
   }
@@ -494,6 +527,7 @@ section.view7 .bottom .button p {
     flex-direction: column;
     gap: 11rem;
     justify-content: center;
+    padding: 2rem;
   }
   section.view3 .bottom .text h2 {
     font-size: clamp(2rem, 3vw, 3.5rem);
@@ -504,7 +538,7 @@ section.view7 .bottom .button p {
     gap: 2rem;
   }
   section.view3 .bottom .text .paragraphs p {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
   }
   section.view3 .top img {
     height: 100%;
@@ -556,7 +590,6 @@ section.view7 .bottom .button p {
   section.view6 .card,
   section.view6 .card1,
   section.view6 .card2 {
-    width: 30%;
     aspect-ratio: 1;
     background-size: cover;
     background-position: center;
@@ -575,5 +608,30 @@ section.view7 .bottom .button p {
   section.view7 .bottom {
     width: 50%;
     margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  section.view7 .bottom .text p {
+    line-height: 3;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+  }
+  section.view7 .bottom .text h1 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+  }
+  section.view8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  section.view8 .top h1 {
+    font-size: clamp(3rem, 2.8vw, 3.2rem);
+  }
+  section.view8 .bottom {
+    padding: 2rem;
+  }
+  section.view8 .bottom button {
+    padding: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
