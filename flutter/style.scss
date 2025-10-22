@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: font;
+}
+
+@font-face {
+    font-family: font;
+    src: url(./google-sans.woff2);
+}
+
+@mixin flexcolumn($gap: 0) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin flexrow($gap: 0) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+}
+    hr{
+    background-color: rgb(197, 195, 195);
+    height:10rem;
+}
+// for the first top layer over the website
+.top-heading {
+    h3 {
+        color: white;
+        background: linear-gradient(to right, rgb(9, 122, 252), rgb(120, 67, 243));
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+// navbar for the mobile 
+.nav-mobile {
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(157, 155, 155);
+
+
+}
+
+section.hero-section {
+    padding: 3rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to left bottom, rgb(243, 252, 255) 40%, rgba(255, 192, 203, 0.4));
+
+    .container {
+        @include flexcolumn(4rem);
+        justify-content: center;
+        align-items: center;
+
+        .image {
+            width: 100%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .heading1 {
+            font-size: 1.4rem;
+            line-height: 1;
+            display: inline-block;
+            text-align: center;
+            // padding: 4rem 0rem;
+        }
+
+        .heading2 {
+            p {
+                font-weight: 400;
+                font-size: 2rem;
+                // padding: 2rem 2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    display: none;
+    box-shadow: 1px 1px 5px rgb(157, 155, 155);
+
+    .nav-right {
+        align-items: center;
+        @include flexrow(2.5rem);
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        button {
+            background-color: rgb(5, 104, 215);
+            padding: 0.7rem 1.5rem;
+            border-radius: 1.2rem;
+            color: white;
+            font-weight: 800;
+            font-size: 0.9rem;
+            border: none;
+        }
+    }
+}
+
+hr{
+    background-color: rgb(197, 195, 195);
+    height:0.2rem;
+}
+section.cards{
+    margin: 1rem;
+    @include flexcolumn(0);
+    .card1,.card2,.card3{
+        @include flexcolumn(1rem);
+        width: 100%;
+        margin: 2rem 0rem;
+        
+        .h2{
+            font-size: 1.2rem;
+            display: inline-block;
+        }
+        p{
+            font-size: 1.2rem;
+           
+        }
+        img{
+            width:80%; 
+            margin: 1.4rem;
+        }
+    }
+}
+@media (min-width:1008px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        width: 100%;
+        @include flexrow(0);
+         width: 100%;
+         background-color: white;
+        }
+
+        
+
+    section.hero-section {
+height: 100vh;
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 0rem;
+            flex-wrap: wrap;
+
+            .image {
+                order: 2;
+                width: 40%;
+               
+
+                img {
+                    width: 100%;
+                     margin-top: 1rem;
+                    object-fit: cover;
+                }
+            }
+
+            .heading1 {
+                order: 1;
+                width: 50%;
+                max-width: 40rem;
+                margin-left: 3rem;
+                text-align: left;
+                font-size: clamp(1rem, 5vw, 2.2rem);
+            }
+
+            .heading2 {
+                order: 3;
+                max-width: 70%;
+
+                p {
+                    text-align: left;
+                    padding: 1rem;
+                    font-size: clamp(1.2rem, 5vw, 2.3rem);
+                }
+            }
+        }
+    }
+    
+section.cards{
+    display: flex;
+    gap:1rem;
+    width: 100%;
+    padding: 4rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+.card1,.card2,.card3{
+    width: 33vw;
+    p{
+        max-width: 25vw;
+    }
+}
+}
+
+}
