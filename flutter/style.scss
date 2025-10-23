@@ -9,6 +9,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: font;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -27,9 +28,9 @@ body {
     flex-direction: row;
     gap: $gap;
 }
-    hr{
+    .hr{
     background-color: rgb(197, 195, 195);
-    height:10rem;
+    height:0.2rem;
 }
 // for the first top layer over the website
 .top-heading {
@@ -54,7 +55,7 @@ body {
 }
 
 section.hero-section {
-    padding: 3rem 0.5rem;
+    // padding: 3rem 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 3rem;
     background: linear-gradient(to left bottom, rgb(243, 252, 255) 40%, rgba(255, 192, 203, 0.4));
@@ -149,6 +150,53 @@ section.cards{
         }
     }
 }
+
+section.view3{
+    @include flexcolumn(2rem);
+    padding: 0rem 1rem;
+    .image{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .text{    
+         @include flexcolumn(1.5rem);      
+        align-items:flex-start;
+        h4{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        h1{
+            font-size: 3.2rem;
+        }
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+        button{
+            background-color:transparent;
+            padding: 0.5rem 1.2rem;
+            border-radius: 1rem;
+            color:rgb(31, 113, 218);
+            border: 2px solid rgb(31, 113, 218);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+    .right{
+        h5{
+            font-size:0.8rem;
+        }
+    }
+
+    }
+}
 @media (min-width:1008px) {
     .nav-mobile {
         display: none;
@@ -164,7 +212,7 @@ section.cards{
         
 
     section.hero-section {
-height: 100vh;
+    height: 85vh;
         .container {
             display: flex;
             flex-direction: row;
@@ -212,14 +260,19 @@ section.cards{
     display: flex;
     gap:1rem;
     width: 100%;
-    padding: 4rem;
+    padding: 1rem 4rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-.card1,.card2,.card3{
+
+    .card1,.card2,.card3{
     width: 33vw;
+    h2{
+        font-size: clamp(1.2rem,2rem,2.2rem);
+    }
     p{
         max-width: 25vw;
+        font-size: clamp(1rem,1.2rem,1.3rem);
     }
 }
 }
