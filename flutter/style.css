@@ -109,21 +109,29 @@ section.cards {
   flex-direction: column;
   gap: 0;
 }
-section.cards .card1, section.cards .card2, section.cards .card3 {
+section.cards .card1,
+section.cards .card2,
+section.cards .card3 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
   margin: 2rem 0rem;
 }
-section.cards .card1 .h2, section.cards .card2 .h2, section.cards .card3 .h2 {
+section.cards .card1 .h2,
+section.cards .card2 .h2,
+section.cards .card3 .h2 {
   font-size: 1.2rem;
   display: inline-block;
 }
-section.cards .card1 p, section.cards .card2 p, section.cards .card3 p {
+section.cards .card1 p,
+section.cards .card2 p,
+section.cards .card3 p {
   font-size: 1.2rem;
 }
-section.cards .card1 img, section.cards .card2 img, section.cards .card3 img {
+section.cards .card1 img,
+section.cards .card2 img,
+section.cards .card3 img {
   width: 80%;
   margin: 1.4rem;
 }
@@ -149,7 +157,7 @@ section.view3 .text {
   align-items: flex-start;
 }
 section.view3 .text h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 section.view3 .text p {
   font-size: 1.2rem;
@@ -157,21 +165,21 @@ section.view3 .text p {
 section.view3 .text h1 {
   font-size: 3.2rem;
 }
-section.view3 .buttons {
+section.view3 .text .buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 2rem;
 }
-section.view3 .buttons .left button {
+section.view3 .text .buttons .left button {
   background-color: transparent;
-  padding: 0.5rem 1.2rem;
-  border-radius: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 1.2rem;
   color: rgb(31, 113, 218);
   border: 2px solid rgb(31, 113, 218);
   font-size: 1rem;
   font-weight: 600;
 }
-section.view3 .buttons .right h5 {
+section.view3 .text .buttons .right h5 {
   font-size: 0.8rem;
 }
 
@@ -235,14 +243,60 @@ section.view3 .buttons .right h5 {
     justify-content: center;
     align-items: center;
   }
-  section.cards .card1, section.cards .card2, section.cards .card3 {
+  section.cards .card1,
+  section.cards .card2,
+  section.cards .card3 {
     width: 33vw;
   }
-  section.cards .card1 h2, section.cards .card2 h2, section.cards .card3 h2 {
+  section.cards .card1 h2,
+  section.cards .card2 h2,
+  section.cards .card3 h2 {
     font-size: 2rem;
   }
-  section.cards .card1 p, section.cards .card2 p, section.cards .card3 p {
+  section.cards .card1 p,
+  section.cards .card2 p,
+  section.cards .card3 p {
     max-width: 25vw;
     font-size: 1.2rem;
+  }
+  section.view3 {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+  section.view3 .image {
+    width: 45%;
+    height: 74%;
+    order: 2;
+  }
+  section.view3 .image img {
+    max-width: 85%;
+    height: 100%;
+  }
+  section.view3 .text {
+    width: 40%;
+    order: 1;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  section.view3 .text h1 {
+    font-size: 3.4rem;
+  }
+  section.view3 .text p {
+    font-size: 1.3rem;
+  }
+  section.view3 .text h4 {
+    font-size: 1.3rem;
+  }
+  section.view3 .text .buttons {
+    order: 3;
+  }
+  section.view3 .text .buttons .right h5 {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

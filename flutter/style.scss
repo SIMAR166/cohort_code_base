@@ -28,10 +28,12 @@ body {
     flex-direction: row;
     gap: $gap;
 }
-    .hr{
+
+.hr {
     background-color: rgb(197, 195, 195);
-    height:0.2rem;
+    height: 0.2rem;
 }
+
 // for the first top layer over the website
 .top-heading {
     h3 {
@@ -124,79 +126,95 @@ section.hero-section {
     }
 }
 
-hr{
+hr {
     background-color: rgb(197, 195, 195);
-    height:0.2rem;
+    height: 0.2rem;
 }
-section.cards{
+
+section.cards {
     margin: 1rem;
     @include flexcolumn(0);
-    .card1,.card2,.card3{
+
+    .card1,
+    .card2,
+    .card3 {
         @include flexcolumn(1rem);
         width: 100%;
         margin: 2rem 0rem;
-        
-        .h2{
+
+        .h2 {
             font-size: 1.2rem;
             display: inline-block;
         }
-        p{
+
+        p {
             font-size: 1.2rem;
-           
+
         }
-        img{
-            width:80%; 
+
+        img {
+            width: 80%;
             margin: 1.4rem;
         }
     }
 }
 
-section.view3{
+section.view3 {
     @include flexcolumn(2rem);
     padding: 0rem 1rem;
-    .image{
+
+    .image {
         width: 100%;
-        img{
+
+        img {
             width: 100%;
             object-fit: cover;
         }
     }
-    .text{    
-         @include flexcolumn(1.5rem);      
-        align-items:flex-start;
-        h4{
-            font-size: 1rem;
+
+    .text {
+        @include flexcolumn(1.5rem);
+        align-items: flex-start;
+
+        h4 {
+            font-size: 1.1rem;
         }
-        p{
+
+        p {
             font-size: 1.2rem;
         }
-        h1{
+
+        h1 {
             font-size: 3.2rem;
         }
-    }
-    .buttons{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .left{
-        button{
-            background-color:transparent;
-            padding: 0.5rem 1.2rem;
-            border-radius: 1rem;
-            color:rgb(31, 113, 218);
-            border: 2px solid rgb(31, 113, 218);
-            font-size: 1rem;
-            font-weight: 600;
-        }
-    }
-    .right{
-        h5{
-            font-size:0.8rem;
-        }
-    }
 
+        .buttons {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .left {
+                button {
+                    background-color: transparent;
+                    padding: 0.5rem 0.5rem;
+                    border-radius: 1.2rem;
+                    color: rgb(31, 113, 218);
+                    border: 2px solid rgb(31, 113, 218);
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+
+            .right {
+                h5 {
+                    font-size: 0.8rem;
+                }
+            }
+
+        }
     }
 }
+
 @media (min-width:1008px) {
     .nav-mobile {
         display: none;
@@ -205,14 +223,14 @@ section.view3{
     .nav-desktop {
         width: 100%;
         @include flexrow(0);
-         width: 100%;
-         background-color: white;
-        }
+        width: 100%;
+        background-color: white;
+    }
 
-        
 
     section.hero-section {
-    height: 85vh;
+        height: 85vh;
+
         .container {
             display: flex;
             flex-direction: row;
@@ -225,11 +243,11 @@ section.view3{
             .image {
                 order: 2;
                 width: 40%;
-               
+
 
                 img {
                     width: 100%;
-                     margin-top: 1rem;
+                    margin-top: 1rem;
                     object-fit: cover;
                 }
             }
@@ -255,26 +273,77 @@ section.view3{
             }
         }
     }
-    
-section.cards{
-    display: flex;
-    gap:1rem;
-    width: 100%;
-    padding: 1rem 4rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
-    .card1,.card2,.card3{
-    width: 33vw;
-    h2{
-        font-size: clamp(1.2rem,2rem,2.2rem);
-    }
-    p{
-        max-width: 25vw;
-        font-size: clamp(1rem,1.2rem,1.3rem);
-    }
-}
-}
+    section.cards {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem 4rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
+        .card1,
+        .card2,
+        .card3 {
+            width: 33vw;
+
+            h2 {
+                font-size: clamp(1.2rem, 2rem, 2.2rem);
+            }
+
+            p {
+                max-width: 25vw;
+                font-size: clamp(1rem, 1.2rem, 1.3rem);
+            }
+        }
+    }
+
+    section.view3 {
+        @include flexrow(9rem);
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+
+        .image {
+            width: 45%;
+            height:74%;
+            order: 2;
+
+            img {
+                max-width: 85%;
+                height: 100%;
+            }
+        }
+
+        .text {
+            width: 40%;
+            order: 1;
+            margin-left: 4rem;
+            @include flexrow(2rem);
+            h1 {
+                font-size: clamp(3.2rem, 3.4rem, 3.6rem);
+            }
+
+            p {
+                font-size: clamp(1.2rem, 1.3rem, 1.5rem);
+            }
+
+            h4 {
+                font-size: clamp(1.1rem, 1.3rem, 1.4rem);
+            }
+
+            .buttons {
+                order: 3;
+
+                .right {
+                    h5 {
+                        font-size: clamp(0.8rem, 1rem, 1.1rem);
+                    }
+                }
+
+
+            }
+        }
+    }
 }
